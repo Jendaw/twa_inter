@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "bootstrap": "^5.3.5",
+    "pg": "^8.14.1",
+    "react-bootstrap": "^2.10.9"
+  }
+}

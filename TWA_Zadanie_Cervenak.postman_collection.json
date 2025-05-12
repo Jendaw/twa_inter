@@ -1,0 +1,101 @@
+{
+	"info": {
+		"_postman_id": "62032bdf-2700-40c5-a9ea-852790cc21e3",
+		"name": "TWA_Zadanie_Cervenak",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "41514903",
+		"_collection_link": "https://twasprint.postman.co/workspace/sprint~4e89d8ec-85f2-4892-8bd5-e0e4ddb7fde8/collection/41514903-62032bdf-2700-40c5-a9ea-852790cc21e3?action=share&source=collection_link&creator=41514903"
+	},
+	"item": [
+		{
+			"name": "create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"first_name\": \"Sevas\",\r\n  \"last_name\": \"Doe\",\r\n  \"email\": \"john.doe@example.com\",\r\n  \"phone\": \"+421123456789\",\r\n  \"hashed_password\": \"securePassword123\",\r\n  \"typUctu\": \"Osobný účet\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8000/create"
+			},
+			"response": []
+		},
+		{
+			"name": "Log in",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"first_name\": \"Sevas\",\r\n  \"last_name\": \"Doe\",\r\n  \"password\": \"securePassword123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8000/login"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete account",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": \"'cd6deba54fb6'\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8000/deleteAcc"
+			},
+			"response": []
+		},
+		{
+			"name": "Create new acc",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"typ\": \"business\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8000/createUcet"
+			},
+			"response": []
+		},
+		{
+			"name": "zmenaMail",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"new.email@example.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8000/zmenaEmailu"
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,29 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "internet_banking_twa",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js",
+    "server": "live-server public --host=0.0.0.0 --port=3000 --middleware=./disable-browser-cache.js"
+  },
+  "author": "Lukas Cervenak",
+  "license": "MIT",
+  "dependencies": {
+    "ajv": "^8.17.1",
+    "bcrypt": "^5.1.1",
+    "body-parser": "^2.2.0",
+    "chart.js": "^4.4.9",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "iban": "^0.0.14",
+    "iban-generator": "^0.0.1",
+    "nodemon": "^3.1.9",
+    "react-chartjs-2": "^5.3.0",
+    "react-toastify": "^11.0.5"
+  },
+  "devDependencies": {
+    "react-router-dom": "^7.4.1"
+  }
+}
